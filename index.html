@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<h1>Welcome to worldchat.io</h1>
+<h2 id="loading-fade">(Loading, please wait!)<br>
+<img src="refresh-1.png" id="spin-fade"></h2>
+<p id="body-in">body test 2423012381289389</p>
+
+<script>
+var loadingText = document.getElementById('loading-fade').style;
+loadingText.opacity = 1;
+(function fade_title(){(loadingText.opacity-=.1)<0?loadingText.display="none":setTimeout(fade_title,200);})();
+</script>
